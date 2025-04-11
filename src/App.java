@@ -24,6 +24,12 @@ public class App {
         int sumaDeDigitos = e.sumaDeDigitos(num);
         System.out.println("Resultado de suma de digitos: " + sumaDeDigitos);
 //----------------------------------------------------------------------------------------------------------------------
+        e.imprimirDescendente(5);
+        System.out.println("Desendente");
+//----------------------------------------------------------------------------------------------------------------------
+        int reverso = e.reverso(num);
+        System.out.println("En Reverso: " + reverso);
+//----------------------------------------------------------------------------------------------------------------------
         /* 
         int n = 5;
         int resultado = factorial(n);

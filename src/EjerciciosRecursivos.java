@@ -43,6 +43,22 @@ public class EjerciciosRecursivos {
         
     }
 //----------------------------------------------------------------------------------------------------------------------
+public void imprimirDescendente(int n) {
+    if (n < 1) return;
+    System.out.print(n + " ");
+    imprimirDescendente(n - 1);
+}
+//----------------------------------------------------------------------------------------------------------------------
+    public int reverso(int n) {
+        return reversoHelper(n, 0);
+    }
+
+    private static int reversoHelper(int n, int resultado) {
+        if (n == 0) return resultado;
+        return reversoHelper(n / 10, resultado * 10 + n % 10);
+    }
+    
+//----------------------------------------------------------------------------------------------------------------------
 }
 //----------------------------------------------------------------------------------------------------------------------
 /*      Codigo fibonacci
