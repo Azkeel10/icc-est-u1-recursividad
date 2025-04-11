@@ -18,7 +18,31 @@ public class EjerciciosRecursivos {
         int resultado = n + resultadoParcial;
         return resultado;
     }
-    
+//----------------------------------------------------------------------------------------------------------------------
+    public int getPotencia(int base, int expo){
+        if (expo == 0) {
+            return 1;
+
+        } else if (expo < 0) {
+            return 1 / getPotencia(base, -expo);
+
+        } else {
+            return base * getPotencia(base, expo - 1);
+        }
+    }
+//----------------------------------------------------------------------------------------------------------------------
+    public int sumaDeDigitos(int num){
+        if (num < 10){
+            return num;
+        }else{
+            int ultimo = num %10;
+            int primero = num /10;
+            return sumaDeDigitos(primero) + ultimo;
+        }
+        
+        
+    }
+//----------------------------------------------------------------------------------------------------------------------
 }
 //----------------------------------------------------------------------------------------------------------------------
 /*      Codigo fibonacci

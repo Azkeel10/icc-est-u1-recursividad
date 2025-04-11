@@ -1,14 +1,28 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("---------Programa funcionando----------");
+        System.out.println("---------Programa funcionando----------\n");
         
-        int num = 5;
+        int numNor = 4;
+        int num = 124; 
+        int expo = 3;
+
+        System.out.println("Numero normal: " + numNor);
+        System.out.println("Numero:" + num);
+        System.out.println("Exponente: " + expo);
 
         EjerciciosRecursivos e = new EjerciciosRecursivos();
 //----------------------------------------------------------------------------------------------------------------------
-        System.out.println("Resultado de Fibonacci: " + e.fibonacci(num));
+        int fibonacci = e.fibonacci(numNor);
+        System.out.println("\nResultado de Fibonacci: " + fibonacci);
 //----------------------------------------------------------------------------------------------------------------------
-        System.out.println("Resultado de Suma consecutiva: " + e.sumaConsecutivos(num));
+        int sumaConsecutivos = e.sumaConsecutivos(numNor);
+        System.out.println("Resultado de Suma consecutiva: " + sumaConsecutivos);
+//----------------------------------------------------------------------------------------------------------------------
+        int potencia = e.getPotencia(numNor,expo);
+        System.out.println("Resultado de Potencia: " + potencia);
+//----------------------------------------------------------------------------------------------------------------------
+        int sumaDeDigitos = e.sumaDeDigitos(num);
+        System.out.println("Resultado de suma de digitos: " + sumaDeDigitos);
 //----------------------------------------------------------------------------------------------------------------------
         /* 
         int n = 5;
